@@ -1,0 +1,24 @@
+{
+  "name": "demo-express-cdn",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/demo-express-cdn/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "demo-express-cdn:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "demo-express-cdn:build:development"
+        },
+        "production": {
+          "buildTarget": "demo-express-cdn:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

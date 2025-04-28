@@ -18,6 +18,7 @@
   "homepage": "https://github.com/julianpoemp/nestjs-redox",
   "scripts": {
     "start:demo:express": "nx serve demo-express",
+    "start:demo:express-cdn": "nx serve demo-express-cdn",
     "start:demo:fastify": "nx serve demo-fastify",
     "build:lib": "nx build nestjs-redox",
     "release:lib": "nx run nestjs-redox:version --releaseAs=patch --push",
